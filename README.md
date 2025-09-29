@@ -27,3 +27,8 @@ The course introduced core programming concepts through small projects and exerc
 1. Clone the repo:  
    ```bash
    git clone https://github.com/jacobruss-1/CS-Freshman-Java.git
+2. Navigate to a project folder
+3. Compile the program
+  javac Filename.java
+4. Run the program
+   java Filename

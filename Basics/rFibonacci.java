@@ -1,0 +1,32 @@
+/**************************************************************************
+
+ * @By: Jacob Russ
+
+ * @Lab: 26
+
+ * @CSE 1001 Fund Software, Fall 2024
+
+ * @Date: November 26, 2024
+
+ * @Description: Computes and returns the nth Fibonnaci number (Recursive) 
+
+ * **************************************************************************/
+import java.util.Scanner; 
+class rFibonacci { 
+ public static void main(String[] args) { 
+  Scanner in = new Scanner(System.in); 
+  System.out.print("Enter n: "); 
+  int n = in.nextInt(); 
+  int result = RecursiveFib(n); 
+  System.out.println(result); 
+ } 
+ public static int RecursiveFib(int n) { 
+  if (n==1) {
+   return 0; 
+  } else if (n==2)
+     return 1; 
+  else { 
+   return RecursiveFib(n-1) + RecursiveFib(n-2); 
+  }
+ }
+}  

@@ -16,7 +16,7 @@ public class DrawNcards {
  public static void main(String[] args) {
   java.util.Random generator = new java.util.Random();
   Scanner in = new Scanner(System.in); 
-  String suitName = null, cardName = null;   // text strings for suit and card
+  String suitName , cardName ;   // text strings for suit and card
   int suitIndex, cardIndex;    // number representation if suit and card
   // use random to generate the suitIndex in interval [0..3] and the cardIndex in [0..12]
   System.out.print("How many cards would you like: ");

@@ -102,43 +102,49 @@ public class anglicizeBigAndSmall {
 
    // Returns the english equivalent of 10*n, for 2 <= n <= 9
    public static String tensName(int n) {
-      if (n == 2) return "twenty ";
-      else if (n == 3) return "thirty ";
-      else if (n == 4) return "forty ";
-      else if (n == 5) return "fifty ";
-      else if (n == 6) return "sixty ";
-      else if (n == 7) return "seventy ";
-      else if (n == 8) return "eighty ";
-      else return "ninety ";
+       return switch (n) {
+           case 2 -> "twenty ";
+           case 3 -> "thirty ";
+           case 4 -> "forty ";
+           case 5 -> "fifty ";
+           case 6 -> "sixty ";
+           case 7 -> "seventy ";
+           case 8 -> "eighty ";
+           default -> "ninety ";
+       };
    }
    
    // Returns the english equivalent of n, for 10 <= n <= 19
    public static String teenName(int n) {
-      if (n == 10) return "ten ";
-      else if (n == 11) return "eleven ";
-      else if (n == 12) return "twelve ";
-      else if (n == 13) return "thirteen ";
-      else if (n == 14) return "fourteen ";
-      else if (n == 15) return "fifteen ";
-      else if (n == 16) return "sixteen ";
-      else if (n == 17) return "seventeen ";
-      else if (n == 18) return "eighteen ";
-      else return "nineteen ";
+       return switch (n) {
+           case 10 -> "ten ";
+           case 11 -> "eleven ";
+           case 12 -> "twelve ";
+           case 13 -> "thirteen ";
+           case 14 -> "fourteen ";
+           case 15 -> "fifteen ";
+           case 16 -> "sixteen ";
+           case 17 -> "seventeen ";
+           case 18 -> "eighteen ";
+           default -> "nineteen ";
+       };
    }
 
    // Returns the english equivalent of n, for 0 < n < 10
    // Returns "", if n = 0
    public static String digitName(int n) {
-      if (n == 0) return "";
-      else if (n == 1) return "one ";
-      else if (n == 2) return "two ";
-      else if (n == 3) return "three ";
-      else if (n == 4) return "four ";
-      else if (n == 5) return "five ";
-      else if (n == 6) return "six ";
-      else if (n == 7) return "seven ";
-      else if (n == 8) return "eight ";
-      else return "nine ";
+       return switch (n) {
+           case 0 -> "";
+           case 1 -> "one ";
+           case 2 -> "two ";
+           case 3 -> "three ";
+           case 4 -> "four ";
+           case 5 -> "five ";
+           case 6 -> "six ";
+           case 7 -> "seven ";
+           case 8 -> "eight ";
+           default -> "nine ";
+       };
    }
 }
 

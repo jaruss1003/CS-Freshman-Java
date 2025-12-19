@@ -33,32 +33,33 @@ class LotsOfArea {
 
       // Handle different types of figures
       switch (type) {
-        case "circle":
-          // Handle circle
-          System.out.print("Enter radius: ");
-          double radius = scanner.nextDouble();
-          area = circleArea(radius);  // Calculate area of the circle
-          break;
-        case "triangle":
-          // Handle triangle
-          System.out.print("Enter base: ");
-          double base = scanner.nextDouble();
-          System.out.print("Enter height: ");
-          double triangleHeight = scanner.nextDouble();
-          area = triangleArea(base, triangleHeight);  // Calculate area of the triangle
-          break;
-        case "rectangle":
-          // Handle rectangle
-          System.out.print("Enter height: ");
-          double rectangleHeight = scanner.nextDouble();
-          System.out.print("Enter width: ");
-          double width = scanner.nextDouble();
-          area = rectangleArea(rectangleHeight, width);  // Calculate area of the rectangle
-          break;
-        default:
-          // Handle invalid figure type
-          System.out.println("Sorry, input must be circle, triangle, or rectangle.");
-          continue;  // Go to the next iteration if the input is invalid
+        case "circle" -> {
+            // Handle circle
+            System.out.print("Enter radius: ");
+            double radius = scanner.nextDouble();
+            area = circleArea(radius);  // Calculate area of the circle
+            }
+        case "triangle" -> {
+            // Handle triangle
+            System.out.print("Enter base: ");
+            double base = scanner.nextDouble();
+            System.out.print("Enter height: ");
+            double triangleHeight = scanner.nextDouble();
+            area = triangleArea(base, triangleHeight);  // Calculate area of the triangle
+            }
+        case "rectangle" -> {
+            // Handle rectangle
+            System.out.print("Enter height: ");
+            double rectangleHeight = scanner.nextDouble();
+            System.out.print("Enter width: ");
+            double width = scanner.nextDouble();
+            area = rectangleArea(rectangleHeight, width);  // Calculate area of the rectangle
+            }
+        default -> {
+            // Handle invalid figure type
+            System.out.println("Sorry, input must be circle, triangle, or rectangle.");
+            continue;  // Go to the next iteration if the input is invalid
+            }
       }
 
       // Output the area of the figure

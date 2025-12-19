@@ -25,7 +25,7 @@ class LotsOfArea {
 
     // Keep asking if the user wants to calculate more areas
     while (desireMore.equals("yes")) {
-      double area = 0;  // Reset area for each iteration
+      double area;  // Variable to store the area of the current figure
 
       // Ask for the type of figure
       System.out.print("Enter type of figure (circle, triangle, or rectangle): ");
